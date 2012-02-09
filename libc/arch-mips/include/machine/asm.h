@@ -141,7 +141,7 @@
 /*
  *  Basic register operations based on selected ISA
  */
-#if (_MIPS_ISA == _MIPS_ISA_MIPS1 || _MIPS_ISA == _MIPS_ISA_MIPS2 || _MIPS_ISA == _MIPS_ISA_MIPS32)
+#if (_MIPS_ISA == _MIPS_ISA_MIPS1 || _MIPS_ISA == _MIPS_ISA_MIPS2 || _MIPS_ISA == _MIPS_ISA_MIPS32 || _MIPS_ISA == _MIPS_ISA_MIPS3)
 #define REGSZ		4	/* 32 bit mode register size */
 #define LOGREGSZ	2	/* log rsize */
 #define	REG_S	sw
@@ -151,7 +151,7 @@
 #define	CF_RA_OFFS	20	/* Call ra save offset */
 #endif
 
-#if (_MIPS_ISA == _MIPS_ISA_MIPS3 || _MIPS_ISA == _MIPS_ISA_MIPS4)
+#if (/*_MIPS_ISA == _MIPS_ISA_MIPS3 ||*/ _MIPS_ISA == _MIPS_ISA_MIPS4)
 #define REGSZ		8	/* 64 bit mode register size */
 #define LOGREGSZ	3	/* log rsize */
 #define	REG_S	sd
