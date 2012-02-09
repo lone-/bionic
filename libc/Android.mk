@@ -354,8 +354,8 @@ libc_common_src_files += \
 	arch-mips/bionic/vfork.S
 
 libc_common_src_files += \
-	arch-mips/string/memset.S \
-	arch-mips/string/memcpy.S \
+	string/memset.c \
+	string/memcpy.c \
 	arch-mips/string/mips_strlen.c
 
 libc_common_src_files += \
